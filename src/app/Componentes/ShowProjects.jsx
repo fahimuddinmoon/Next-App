@@ -206,13 +206,13 @@ export default function ShowProjects() {
                         <div className='px-6 '>
                             <h4 className='text-xl font-semibold text-white mt-4'>GrowthSummit</h4>
                             <div className='text-gray-400'>
-                                <p className='text-xs px-3 mt-2 rounded-2xl flex mr-5 justify-start items-center gap-2 bg-[#003D25] py-2'>
+                                <p className='text-xs px-3 mt-2 rounded-2xl flex mr-4 justify-start items-center  bg-[#003D25] py-2'>
                                     <span className='text-[#1FFFA5]'>
                                         <FaCheck />
                                     </span>
                                     20% high conversion than average in first week
                                 </p>
-                                <p className=' flex justify-start mt-2 items-center gap-2 text-xs px-3 rounded-2xl bg-[#003D25] py-2  mr-9 text-end'>
+                                <p className=' flex justify-start mt-2 items-center  text-xs px-3 rounded-2xl bg-[#003D25] py-2  mr-9 text-end'>
                                     <span className='text-[#1FFFA5]'>
                                         <FaCheck />
                                     </span>
@@ -226,13 +226,13 @@ export default function ShowProjects() {
                         <div className='px-6 '>
                             <h4 className='text-xl font-semibold text-white mt-4'>Flowpilot</h4>
                             <div className='text-gray-400'>
-                                <p className='text-xs px-3 mt-2 rounded-2xl flex justify-start items-center gap-2 mr-5 bg-[#003D25] py-2'>
+                                <p className='text-xs px-3 mt-2 rounded-2xl flex justify-start items-center  mr-4 bg-[#003D25] py-2'>
                                     <span className='text-[#1FFFA5]'>
                                         <FaCheck />
                                     </span>
                                     20% high conversion than average in first week
                                 </p>
-                                <p className=' flex justify-start mt-2 items-center gap-2 text-xs px-3 mr-9 rounded-2xl bg-[#003D25] py-2  text-end'>
+                                <p className=' flex justify-start mt-2 items-center  text-xs px-3 mr-9 rounded-2xl bg-[#003D25] py-2  text-end'>
                                     <span className='text-[#1FFFA5]'>
                                         <FaCheck />
                                     </span>
@@ -246,13 +246,13 @@ export default function ShowProjects() {
                         <div className='px-6 '>
                             <h4 className='text-xl font-semibold text-white mt-4'>Flowpilot</h4>
                             <div className='text-gray-400'>
-                                <p className='text-xs px-3 mt-2 rounded-2xl flex justify-start items-center gap-2 mr-5 bg-[#003D25] py-2'>
+                                <p className='text-xs px-3 mt-2 rounded-2xl flex justify-start items-center  mr-4 bg-[#003D25] py-2'>
                                     <span className='text-[#1FFFA5]'>
                                         <FaCheck />
                                     </span>
                                     20% high conversion than average in first week
                                 </p>
-                                <p className=' flex justify-start mt-2 items-center gap-2 text-xs px-3 mr-9 rounded-2xl bg-[#003D25] py-2  text-end'>
+                                <p className=' flex justify-start mt-2 items-center  text-xs px-3 mr-9 rounded-2xl bg-[#003D25] py-2  text-end'>
                                     <span className='text-[#1FFFA5]'>
                                         <FaCheck />
                                     </span>
