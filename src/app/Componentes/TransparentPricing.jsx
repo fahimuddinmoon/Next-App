@@ -1,14 +1,28 @@
 "use client";
 import React from 'react'
 import { FaArrowRightLong } from 'react-icons/fa6';
+import { motion } from 'framer-motion';
 export default function TransparentPricing() {
     return (
         <div className='bg-[#0A0F0D]'>
-            <div className='py-12 mx-5 md:w-10/12 lg:w-9/12 sm:mx-auto'>
-                <h3 className='text-3xl font-semibold text-white'>Simple, Transparent Pricing — <span className='text-[#1FFFA5]'>Choose Your Plan</span></h3>
-                <p className='text-xs font-semibold text-gray-500 mt-5'>No hidden fees, no surprises. Just premium landing pages at unbeatable prices.</p>
+            <div
+                className='py-12 mx-5 md:w-10/12 lg:w-9/12 sm:mx-auto'>
+                <motion.div
+                    initial={{ opacity: 0, y: 80 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                    transition={{ duration: 0.6 }}
+                >
+                    <h3 className='text-3xl font-semibold text-white'>Simple, Transparent Pricing — <span className='text-[#1FFFA5]'>Choose Your Plan</span></h3>
+                    <p className='text-xs  text-gray-500 mt-5'>No hidden fees, no surprises. Just premium landing pages at unbeatable prices.</p>
+                </motion.div>
                 <div className='lg:grid lg:grid-cols-3 lg:gap-3 h-full text-white mt-10'>
-                    <div className='mb-4 lg:my-0 rounded-lg w-full h-full p-6 bg-[#192420] flex flex-col justify-between'>
+                    <motion.div
+                        initial={{ opacity: 0, y: 80 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.2 }}
+                        transition={{ duration: 0.6 }}
+                        className='mb-4 lg:my-0 rounded-lg w-full h-full p-6 bg-[#192420] flex flex-col justify-between'>
                         <div className='flex justify-between items-start'>
                             <div>
                                 <p className='text-lg font-semibold pb-1'>Basic</p>
@@ -24,8 +38,13 @@ export default function TransparentPricing() {
                             <li>Basic Support</li>
                         </ul>
                         <button className='flex justify-center text-sm items-center gap-2 w-full bg-[#003D25] text-[#00E58A] mt-8 py-2 rounded-lg'>Start my project <FaArrowRightLong /></button>
-                    </div>
-                    <div className='mb-4 lg:my-0 rounded-lg w-full   p-6 bg-[#192420] border-2 border-[#1FFFA5] relative flex flex-col justify-between'>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 80 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.2 }}
+                        transition={{ duration: 0.6 }}
+                        className='mb-4 lg:my-0 rounded-lg w-full   p-6 bg-[#192420] border-2 border-[#1FFFA5] relative flex flex-col justify-between'>
                         <p className='border-2 border-[#1FFFA5] text-[#1FFFA5] rounded-full px-3 py-1 -top-[19px] z-10 bg-[#151E1B] absolute'>Most popular</p>
                         <div className='flex justify-between items-start'>
                             <div>
@@ -43,8 +62,13 @@ export default function TransparentPricing() {
                             <li>Priority Support</li>
                         </ul>
                         <button className='flex justify-center text-sm items-center gap-2 w-full bg-[#1FFFA5] text-black mt-8 py-2 rounded-lg'>Start my project <FaArrowRightLong /></button>
-                    </div>
-                    <div className='mb-4 lg:my-0 rounded-lg w-full   p-6 bg-[#192420] flex flex-col justify-between'>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 80 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.2 }}
+                        transition={{ duration: 0.6 }}
+                        className='mb-4 lg:my-0 rounded-lg w-full   p-6 bg-[#192420] flex flex-col justify-between'>
                         <div className='flex justify-between items-start'>
                             <div>
                                 <p className='text-lg font-semibold pb-1'>Premium</p>
@@ -61,20 +85,30 @@ export default function TransparentPricing() {
                             <li>Performance Optimization</li>
                         </ul>
                         <button className='flex justify-center text-sm items-center gap-2 w-full bg-[#003D25] text-[#00E58A] mt-8 py-2 rounded-lg'>Start my project <FaArrowRightLong /></button>
-                    </div>
+                    </motion.div>
                 </div>
-                <div className='flex items-center mt-7 gap-7' >
+                <motion.div
+                    initial={{ opacity: 0, y: 80 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                    transition={{ duration: 0.6 }}
+                    className='flex items-center mt-7 gap-7' >
                     <img src="Image/Lightning (1).png" alt="" />
                     <div>
                         <p className='text-lg font-semibold text-white mb-1'>Limited Availability</p>
-                        <p className='text-xs font-semibold text-gray-400'>We only onboard 5 new clients per month. 2 spots left for this month — secure yours today.</p>
+                        <p className='text-xs  text-gray-400'>We only onboard 5 new clients per month. 2 spots left for this month — secure yours today.</p>
                     </div>
-                </div>
-                <div className='text-center p-5 rounded-lg bg-[#192420] mt-9 text-white'>
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, y: 80 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                    transition={{ duration: 0.6 }}
+                    className='text-center p-5 rounded-lg bg-[#192420] mt-9 text-white'>
                     <h3 className='text-4xl font-semibold my-5 pt-4'>Special Offer For Early Clients</h3>
                     <p className='text-sm mb-5 text-gray-400'>Get 10% OFF + Free Hosting Setup when you book this week.</p>
                     <button className='flex justify-center text-sm items-center gap-2 mx-auto bg-[#1FFFA5] text-black mt-10 mb-5 px-7 py-3 rounded-lg'>Claim my 10% discount <FaArrowRightLong /></button>
-                </div>
+                </motion.div>
             </div>
         </div>
     )

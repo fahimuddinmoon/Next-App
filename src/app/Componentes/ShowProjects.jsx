@@ -5,13 +5,26 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import { motion } from 'framer-motion';
 import { FaArrowRightLong, FaCheck } from 'react-icons/fa6';
 export default function ShowProjects() {
     return (
         <div className='bg-[#0A0F0D]'>
             <div className='py-16 relative'>
-                <h3 className='text-4xl font-semibold text-center text-white'>Case Studies</h3>
-                <p className='text-xs font-semibold text-center text-white mt-2 mb-7'>See the designs that delivered results</p>
+                <motion.h3
+                    initial={{ opacity: 0, y: 80 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                    transition={{ duration: 0.6 }}
+                    className='text-4xl font-semibold text-center text-white'>Case Studies
+                </motion.h3>
+                <motion.p
+                    initial={{ opacity: 0, y: 80 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                    transition={{ duration: 0.6 }}
+                    className='text-xs  text-center text-white mt-2 mb-7'>See the designs that delivered results
+                </motion.p>
                 <div className='hidden sm:inline'>
                     {/* Swiper */}
                     <Swiper
@@ -249,10 +262,14 @@ export default function ShowProjects() {
                         </div>
                     </div>
                 </div>
-                <button className='mx-auto bg-[#1FFFA5] px-7 py-2 rounded-lg mt-9 text-sm flex justify-center items-center gap-2 shadow-[0_0_40px_0_#0e4932] font-semibold'>I want similar results <FaArrowRightLong /> </button>
-                
+                <motion.button
+                    initial={{ opacity: 0, y: 80 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                    transition={{ duration: 0.6 }}
+                    className='mx-auto bg-[#1FFFA5] px-7 py-2 rounded-lg mt-9 text-sm flex justify-center items-center gap-2 shadow-[0_0_40px_0_#0e4932] font-semibold'>I want similar results <FaArrowRightLong /> </motion.button>
+
             </div>
-            {/* <hr className='border-t-4 border-[#151E1B] inline sm:hidden'/> */}
         </div>
     )
 }
