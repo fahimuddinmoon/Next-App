@@ -11,7 +11,7 @@ import TransparentPricing from "./Componentes/TransparentPricing";
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Navber></Navber>
       <Banner></Banner>
       <Survice></Survice>

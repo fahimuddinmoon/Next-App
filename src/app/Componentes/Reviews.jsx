@@ -19,7 +19,7 @@ export default function Reviews() {
                         transition={{ duration: 0.6 }}
                     >
                         <h3 className='text-4xl font-semibold mt-12'>What Our Clients Are Saying <span className='text-[#1FFFA5]'>  About Us </span></h3>
-                        <p className='text-xs  text-gray-500 mt-4'>Real feedback from real businesses who've seen real results.</p>
+                        <p className='text-xs  text-gray-500 mt-4 mb-5'>Real feedback from real businesses who've seen real results.</p>
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, y: 80 }}
